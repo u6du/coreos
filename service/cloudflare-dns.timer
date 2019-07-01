@@ -3,7 +3,7 @@ Description=Runs mytimer every seconds
 
 [Timer]
 OnBootSec=1s
-OnUnitActiveSec=1m
+OnUnitActiveSec=1h
 Unit=cloudflare-dns.service
 
 [Install]

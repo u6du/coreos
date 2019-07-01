@@ -11,3 +11,6 @@ ln -s $_dirname/service/*.timer .
 systemctl daemon-reload
 
 systemctl enable --now cloudflare-dns.timer
+
+cd /home
+ln -s $_dirname/.bash_profile .
