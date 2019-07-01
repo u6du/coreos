@@ -13,10 +13,14 @@ systemctl daemon-reload
 systemctl enable --now cloudflare-dns.timer
 
 cd ~ 
+
+_home=$_dirname/home
+
+ln -s $_home/.gitconfig .
+
 if [ ! -d ".bin" ]; then 
-ln -s $_dirname/bin/ .bin/
+ln -s $_home/.bin .bin
 fi
 
-ln -s $_dirname/.bash_profile .
-chmod +x ~/.bash_profile
-exec ~/.bash_profile
+ln -s $_home/.bash_profile .
+. ~/.bash_profile

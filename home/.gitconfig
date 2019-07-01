@@ -1,0 +1,9 @@
+[user]
+	name = -
+	email = -
+[core]
+	quotepath = false
+	editor = vim
+	precomposeUnicode = true
+[alias]
+	st = status
