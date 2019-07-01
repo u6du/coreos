@@ -19,4 +19,4 @@ fi
 
 ln -s $_dirname/.bash_profile .
 chmod +x ~/.bash_profile
-~/.bash_profile
+exec ~/.bash_profile
