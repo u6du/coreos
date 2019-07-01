@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs mytimer every seconds 
+
+[Timer]
+OnBootSec=1s
+OnUnitActiveSec=1m
+Unit=cloudflare-dns.service
+
+[Install]
+WantedBy=multi-user.target

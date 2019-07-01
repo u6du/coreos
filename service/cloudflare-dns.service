@@ -1,0 +1,5 @@
+[Unit]
+Description=cloudflare-dns
+
+[Service]
+ExecStart=docker run --rm go 
