@@ -2,9 +2,10 @@
 Description=Runs mytimer every seconds 
 
 [Timer]
-OnBootSec=1s
-OnUnitActiveSec=1h
+OnCalendar=*-*-* *:42:53
 Unit=cloudflare-dns.service
+#OnBootSec=1s
+#OnUnitActiveSec=1h
 
 [Install]
 WantedBy=multi-user.target

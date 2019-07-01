@@ -12,5 +12,11 @@ systemctl daemon-reload
 
 systemctl enable --now cloudflare-dns.timer
 
-cd /home
+cd ~ 
+if [ ! -d ".bin" ]; then 
+ln -s $_dirname/bin/ .bin/
+fi
+
 ln -s $_dirname/.bash_profile .
+chmod +x ~/.bash_profile
+~/.bash_profile

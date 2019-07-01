@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+git add -u && git commit -m '-' ;
+branch=`git branch 2> /dev/null | sed -e '/^[^*]/d' |awk -F' ' '{print $2}'`
+git pull && git push
