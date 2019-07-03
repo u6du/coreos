@@ -2,6 +2,9 @@
 
 _dirname=$(cd "$(dirname "$0")"; pwd)
 
+cd $_dirname
+
+git pull
 
 cd /etc/systemd/system/
 
