@@ -2,4 +2,9 @@
 Description=cloudflare-dns
 
 [Service]
-ExecStart=docker run --rm -v /root/:/root/ u6du/cloudflare-dns go run /root/6du/cloudflare-dns/txt-update/main.go
+ExecStart=docker run --rm \
+          -v /root/.cache:/root/.cache \
+          -v /root/.config:/root/.config \
+          -v /root/go:/go \
+          -v /root/6du:/root/6du \
+          u6du/cloudflare-dns go run /root/6du/cloudflare-dns/txt-update/main.go
