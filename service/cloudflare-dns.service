@@ -6,5 +6,6 @@ ExecStart=docker run --rm \
           -v /root/.cache:/root/.cache \
           -v /root/.config:/root/.config \
           -v /root/go:/go \
-          -v /root/6du:/root/6du \
-          u6du/cloudflare-dns go run /root/6du/cloudflare-dns/txt-update/main.go
+          -v /root/6du/cloudflare-dns/txt-update:/root/6du/cloudflare-dns/txt-update \
+          -w /root/6du/cloudflare-dns/txt-update \
+          u6du/cloudflare-dns go run main.go
