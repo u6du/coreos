@@ -2,4 +2,4 @@
 Description=cloudflare-dns
 
 [Service]
-ExecStart=docker run --rm go 
+ExecStart=docker run --rm u6du/cloudflare-dns
