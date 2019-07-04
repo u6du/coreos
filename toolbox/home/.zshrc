@@ -105,7 +105,7 @@ export PROMPT="%F{008}%m%f %F{008}$USER%f ${PROMPT}"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-$HOME/.asdf/asdf.sh
+. $HOME/.asdf/asdf.sh
 
 if [ -f ~/.tmux_default ]; then
 . ~/.tmux_default > /dev/null 2>&1
