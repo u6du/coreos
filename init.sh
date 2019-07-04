@@ -25,5 +25,8 @@ if [ ! -d ".bin" ]; then
 ln -s $_home/.bin .bin
 fi
 
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --depth=1
 ln -s $_home/.bash_profile .
 . ~/.bash_profile
+
+
