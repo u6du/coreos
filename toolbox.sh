@@ -1,1 +1,3 @@
-dnf install -y python3 tmux neovim git
+#!/usr/bin/env sh
+
+toolbox zsh
