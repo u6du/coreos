@@ -7,4 +7,4 @@ _dirname=`basename $_dir`
 
 echo $_dirname
 docker build -t i6du/$_dirname:latest . 
-
+docker push i6du/$_dirname:latest
