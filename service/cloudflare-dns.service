@@ -4,7 +4,7 @@ Description=cloudflare-dns
 [Service]
 ExecStart=docker run --rm \
           -v /root/.cache:/root/.cache \
-	  -v /root/6du/6du_private_key/decrypt/cloudflare:/root/.config/6DU/cloudflare \
+	  -v /root/6du/6du.config/decrypt/cloudflare:/root/.config/6DU/cloudflare \
           -v /root/go:/go \
           -v /root/6du/cloudflare-dns/txt-update:/root/6du/cloudflare-dns/txt-update \
           -w /root/6du/cloudflare-dns/txt-update \
