@@ -8,4 +8,4 @@ ExecStart=docker run --rm \
           -v /root/go:/go \
           -v /root/6du/cloudflare-dns/txt-update:/root/6du/cloudflare-dns/txt-update \
           -w /root/6du/cloudflare-dns/txt-update \
-          u6du/cloudflare-dns go run main.go
+          i6du/go go run main.go
