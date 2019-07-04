@@ -2,7 +2,7 @@
 Description=Runs mytimer every seconds 
 
 [Timer]
-OnCalendar=*-*-* *:42:53
+OnCalendar=*-*-* *:00:01
 Unit=cloudflare-dns.service
 #OnBootSec=1s
 #OnUnitActiveSec=1h
